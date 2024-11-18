@@ -20,7 +20,7 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
   - `pyttsx3`  
   - `pywhatkit`  
   - `datetime`  
-  - (Añade más si las usas).  
+  - `re`  
 
 ## Instalación  
 1. Clona este repositorio en tu máquina local:  
@@ -39,10 +39,10 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
 ## Uso
 Lola interactúa por comandos de voz y texto. A continuación, algunos ejemplos:
 - Para buscar en la web:
-    Usuario: "Lola, busca inteligencia artificial."
+  - `Usuario: "Lola, busca inteligencia artificial."`  
 - Para reproducir música:
-    Usuario: "Lola, pon música de Queen en YouTube."
+  - `Usuario: "Lola, pon música de Queen en YouTube."`  
 - Para conocer la hora:
-    Usuario: "Lola, ¿qué hora es?"
+  - `Usuario: "Lola, ¿qué hora es?"`  
 - Para operaciones matemáticas:
-    Usuario: "Lola, ¿cuánto es 2 más 3?"
+  - `Usuario: "Lola, ¿cuánto es 2 más 3?"`  
