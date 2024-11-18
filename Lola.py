@@ -3,7 +3,6 @@ import pyttsx3
 import pywhatkit
 import datetime
 import re
-import wikipedia
 
 name = 'lola'
 listener = sr.Recognizer()
@@ -54,18 +53,8 @@ def run():
 
     elif 'busca' in rec:
         order = rec.replace('busca', '').strip()
-        try:
-            talk(f"Buscando {order} en Wikipedia.")
-            info = wikipedia.summary(order, sentences=1)
-            talk(info)
-            print(f"Resumen de Wikipedia: {info}")  # Mostrar resumen en consola
-        except wikipedia.exceptions.DisambiguationError:
-            talk(f"Hay varias definiciones para {order}. Intenta ser más específico.")
-        except wikipedia.exceptions.PageError:
-            talk(f"No encontré resultados para {order}.")
-        except Exception as e:
-            print(f"Error: {e}")
-            talk("Ocurrió un error, inténtalo de nuevo.")
+        talk(f"Buscando {order} en Google.")
+        pywhatkit.search(order)
 
     elif 'calcula' in rec:
         try:
